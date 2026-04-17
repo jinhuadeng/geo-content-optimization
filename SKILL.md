@@ -1,6 +1,6 @@
 ---
 name: geo-content-optimization
-description: Optimize articles, landing pages, docs, and brand content for visibility, citation, and recommendation in generative AI systems such as ChatGPT, Claude, Gemini, Perplexity, and AI Overviews. Use when the user asks about GEO, AEO, AI SEO, LLM visibility, answer engine optimization, AI citations, AI share of voice, structured content for LLMs, rewriting content to be more citable/extractable, or building a repeatable workflow to improve how a brand or page gets surfaced in AI-generated answers.
+description: Optimize articles, landing pages, docs, and brand content for visibility, citation, and recommendation in generative AI systems such as ChatGPT, Claude, Gemini, Perplexity, and AI Overviews. Use when the user asks about GEO, AEO, AI SEO, LLM visibility, answer engine optimization, AI citations, AI share of voice, structured content for LLMs, rewriting content to be more citable/extractable, improving Chinese content for AI discovery, or building a repeatable workflow to improve how a brand or page gets surfaced in AI-generated answers.
 ---
 
 # GEO Content Optimization
@@ -42,6 +42,7 @@ Frame the work as improving:
    - **Entity mode**: strengthen brand/entity-topic associations
    - **Comparison mode**: create “X vs Y”, alternatives, best-for, use-case content
    - **FAQ mode**: generate structured Q&A blocks optimized for answer engines
+   - **Chinese GEO mode**: rewrite Chinese content for higher clarity, quotability, and AI citation fitness
 
 3. **Evaluate against the GEO checklist**
    Check for:
@@ -83,6 +84,16 @@ Frame the work as improving:
    - FAQ block
    - distribution suggestions
    - measurement suggestions
+
+## Chinese GEO guidance
+
+For Chinese content, optimize for:
+- 开头 3 句内说清“它是什么 / 适合谁 / 为什么值得看”
+- 避免空泛抒情和长铺垫
+- 用可摘录句代替抽象判断
+- 多用“是什么 / 为什么 / 怎么做 / 和谁比 / 适合谁”结构
+- 补 FAQ、对比块、结论块
+- 让每个段落单独摘出来也能成立
 
 ## Writing rules for GEO
 
@@ -148,17 +159,26 @@ Use these indicators when possible:
 - `references/geo-principles.md` — core GEO concepts, terminology, and practical heuristics
 - `references/query-patterns.md` — common answer-engine query patterns to map content against
 - `references/rewrite-playbook.md` — tactical rewrite moves for articles, landing pages, and docs
+- `references/chinese-geo-playbook.md` — Chinese GEO rewrite patterns for公众号/官网/品牌内容
+- `references/demo-use-cases.md` — demo-friendly before/after scenarios you can show or sell
 - `scripts/geo_audit.py` — lightweight audit for markdown/html/text pages using GEO heuristics
+- `scripts/geo_rewrite_brief.py` — generate a structured GEO rewrite brief from raw content
 
-## How to use the script
+## How to use the scripts
 
-For a quick audit:
+Quick audit:
 
 ```bash
 python3 scripts/geo_audit.py <file>
 ```
 
-Use the script for a fast first pass, then apply editorial judgment.
+Rewrite brief:
+
+```bash
+python3 scripts/geo_rewrite_brief.py <file>
+```
+
+Use scripts for a fast first pass, then apply editorial judgment.
 
 ## Default stance
 
