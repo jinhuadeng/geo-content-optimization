@@ -178,6 +178,22 @@ Rewrite brief:
 python3 scripts/geo_rewrite_brief.py <file>
 ```
 
+Rewrite output package:
+
+```bash
+python3 scripts/geo_rewrite_output.py <file>
+```
+
+Use scripts for a fast first pass, then apply editorial judgment.
+
+## Default stance
+
+Be concrete.
+Be skeptical of hype.
+Turn “AI SEO” into visible content changes, not buzzword theater.
+cripts/geo_rewrite_brief.py <file>
+```
+
 Use scripts for a fast first pass, then apply editorial judgment.
 
 ## Default stance
